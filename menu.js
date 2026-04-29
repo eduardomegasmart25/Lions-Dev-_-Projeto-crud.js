@@ -5,6 +5,8 @@ import baralhos from "./dadosBaralhos.js";
 import flashcards from "./dadosFlashcards.js";
 import adicionarBaralho from "./adicionarBaralho.js";
 import adicionarFlashcard from "./adicionarFlashcard.js";
+import atualizarBaralho from "./atualizarBaralho.js";
+import atualizarFlashcard from "./atualizarFlashcard.js";
 
 function mainMenu() {
     console.log('\n --- Menu ---')
@@ -60,10 +62,25 @@ while(opcao != 12) {
             }
             break
         case '6':
-            
+            let idBaralhoAtuali = Number(prompt("Qual o id à ser atualizado: "))
+            let atualizacaoBaralho = {
+                titulo: prompt("Qual o novo titulo do Baralho: ")
+            }
+
+            const atualizouBar = atualizarBaralho(baralhos, idBaralhoAtuali, atualizacaoBaralho)
+            if(atualizouBar) {
+                console.log("Baralho atualizado.")
+            } console.log(baralhos)
             break
         case '7':
+            let id = Number(prompt("Qual a id à ser atualizado: "))
+            let novaPergunta = prompt("Qual a pergunta: ")
+            let novaResposta = prompt("Qual a resposta: ")
             
+            const atualizouFlas = atualizarFlashcard(flashcards, id , novaPergunta, novaResposta)
+            if(atualizouFlas) {
+                console.log("Flashcard Atualizado.")
+            } console.log(flashcards)
             break
         case '8':
             
