@@ -51,9 +51,10 @@ while(opcao != 12) {
             let novoFlashcard = {
                 pergunta: prompt("Qual a pergunta do Flashcard: "),
                 resposta: prompt("Resposta do Flashcard: "),
+                idBaralho: Number(prompt("Qual a id do Baralho: "))
             }
-
-            const adicionouFlas = adicionarFlashcard(novoFlashcard, flashcards,)
+            
+            const adicionouFlas = adicionarFlashcard(novoFlashcard, flashcards, baralhos)
             if(adicionouFlas) {
                 console.log('Flashcard Registrado.')
             }
