@@ -1,4 +1,4 @@
-function adicionarFlashcard (novoFlashcard, flashcard) {
+function adicionarFlashcard (novoFlashcard, flashcard) {}
     
 
 export default adicionarFlashcard
