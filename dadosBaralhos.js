@@ -1,6 +1,6 @@
 const baralhos = [
-    {id: 1, titulo: "JavaScript"},
-    {id: 2, tutulo: "Matemática"}
+    {titulo: "JavaScript", id: 1},
+    {titulo: "Matemática", id: 2}
 ]
 
 export default baralhos;
