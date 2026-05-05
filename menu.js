@@ -45,7 +45,7 @@ while(opcao != 12) {
             break
         case '3':
             let id = Number(prompt("Digite o ID do baralho: "))
-            listarPorBaralho(flashcards, baralhos, id)
+            listarPorBaralho(baralhos, flashcards, id)
             
             break
         case '4':
