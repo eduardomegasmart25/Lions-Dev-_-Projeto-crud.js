@@ -11,6 +11,7 @@ import removerBarlho from "./deletarBaralho.js";
 import removerFlashcard from "./deletar.js";
 import listarBaralho from "./listarBaralho.js";
 import listarFlashcards from "./listarFlashcard.js";
+import listarPorBaralho from "./listarPorBaralho.js";
 
 function mainMenu() {
     console.log('\n --- Menu ---')
@@ -43,6 +44,8 @@ while(opcao != 12) {
         
             break
         case '3':
+            let id = Number(prompt("Digite o ID do baralho: "))
+            listarPorBaralho(flashcards, baralhos, id)
             
             break
         case '4':
@@ -79,11 +82,11 @@ while(opcao != 12) {
             } console.log(baralhos)
             break
         case '7':
-            let id = Number(prompt("Qual a id à ser atualizado: "))
+            let idFlashAtuali = Number(prompt("Qual a id à ser atualizado: "))
             let novaPergunta = prompt("Qual a pergunta: ")
             let novaResposta = prompt("Qual a resposta: ")
             
-            const atualizouFlas = atualizarFlashcard(flashcards, id , novaPergunta, novaResposta)
+            const atualizouFlas = atualizarFlashcard(flashcards, idFlashAtuali , novaPergunta, novaResposta)
             if(atualizouFlas) {
                 console.log("Flashcard Atualizado.")
             } console.log(flashcards)

@@ -1,8 +1,8 @@
-function atualizarFlashcard (flashcards, id , novaPergunta, novaResposta) {
+function atualizarFlashcard (flashcards, idFlashAtuali , novaPergunta, novaResposta) {
     let encontrado = false
 
     for(let i = 0; i < flashcards.length; i++) {
-        if(flashcards[i].id === id) {
+        if(flashcards[i].id === idFlashAtuali) {
             flashcards[i].pergunta = novaPergunta
             flashcards[i].resposta = novaResposta
             encontrado = true
