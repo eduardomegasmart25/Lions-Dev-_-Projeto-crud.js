@@ -7,6 +7,10 @@ import adicionarBaralho from "./adicionarBaralho.js";
 import adicionarFlashcard from "./adicionarFlashcard.js";
 import atualizarBaralho from "./atualizarBaralho.js";
 import atualizarFlashcard from "./atualizarFlashcard.js";
+import removerBarlho from "./deletarBaralho.js";
+import removerFlashcard from "./deletar.js";
+import listarBaralho from "./listarBaralho.js";
+import listarFlashcards from "./listarFlashcard.js";
 
 function mainMenu() {
     console.log('\n --- Menu ---')
@@ -32,15 +36,17 @@ while(opcao != 12) {
 
     switch(opcao) {
         case '1':
-            
+            listarBaralho(baralhos)
             break
         case '2':
+            listarFlashcards(flashcards)
         
             break
         case '3':
             
             break
         case '4':
+
             let novoBaralho = {
                 titulo: prompt("Qual será o titulo do Baralho? ")
             }
@@ -83,9 +89,21 @@ while(opcao != 12) {
             } console.log(flashcards)
             break
         case '8':
+            let idBar = Number(prompt("Qual a id á ser apagado: "))
+            let pergunta1 = prompt("Vocẽ tem certeza? ")
+            
+            if(pergunta1 === "s") {
+                const deletou = removerBarlho(idBar,baralhos)
+            }
             
             break
         case '9':
+            let idFlas = Number(prompt("Qual o id á ser removido:"))
+            let pergunta2 = prompt("Vocẽ tem certeza? ")
+
+            if(pergunta2 === "s") {
+                const deletouFlas = removerFlashcard(idFlas, baralhos)
+            }
             
             break
         case '10':
