@@ -8,7 +8,7 @@ import adicionarFlashcard from "./adicionarFlashcard.js";
 import atualizarBaralho from "./atualizarBaralho.js";
 import atualizarFlashcard from "./atualizarFlashcard.js";
 import removerBarlho from "./deletarBaralho.js";
-import removerFlashcard from "./deletar.js";
+import removerFlashcard from "./deletarFlashcard.js";
 import listarBaralho from "./listarBaralho.js";
 import listarFlashcards from "./listarFlashcard.js";
 import listarPorBaralho from "./listarPorBaralho.js";
