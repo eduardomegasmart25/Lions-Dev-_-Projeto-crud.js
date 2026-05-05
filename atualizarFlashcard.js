@@ -11,7 +11,7 @@ function atualizarFlashcard (flashcards, id , novaPergunta, novaResposta) {
     }
 
     if(encontrado) {
-        console.log("Flashcard atualizado!")
+        console.log("Flashcard atualizado!");
         return true
     } else {
         console.log("Flashcard não encontrado.")

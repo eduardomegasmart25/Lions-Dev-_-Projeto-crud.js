@@ -10,7 +10,7 @@ function atualizarBaralho (baralhos, idBaralhoAtuali, atualizacaoBaralho) {
     }
 
     if(encontrado) {
-        console.log("Baralho atualizado!")
+        console.log("Baralho atualizado!");
     } else {
         console.log("Baralho não encontrado.")
     }

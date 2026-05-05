@@ -9,7 +9,7 @@ function adicionarFlashcard (novoFlashcard, flashcards, baralhos) {
         }                
     }
         if(!baralhoExiste) {
-            console.log("Baralho não existe.")
+            console.log("Baralho não existe.");
             return false
         }
 

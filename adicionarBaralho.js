@@ -6,7 +6,7 @@ function adicionarBaralho (novoBaralho, baralhos) {
     } else {
         novoBaralho.id = 1
     }
-    baralhos.push(novoBaralho)
+    baralhos.push(novoBaralho);
     return true
 }
 
